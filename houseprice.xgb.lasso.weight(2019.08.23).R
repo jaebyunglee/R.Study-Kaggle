@@ -285,7 +285,7 @@ ridge.pred = exp(predict(ridge.fit, as.matrix(final.test.data[,-1])))
 #lasso
 set.seed(2019)
 lasso.fit = cv.glmnet(as.matrix(final.train.data[,-1]),as.matrix(final.train.data[,1]))
-lasso.pred = exp(predict(ridge.fit, as.matrix(final.test.data[,-1])))
+lasso.pred = exp(predict(lasso.fit, as.matrix(final.test.data[,-1])))
 
 #xgboost
 tr.label = final.train.data$SalePrice
