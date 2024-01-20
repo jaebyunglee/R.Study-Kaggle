@@ -10,7 +10,7 @@
   library(randomForest)
   library(spatstat) #make dummy variables
   rm(list=ls())
-  
+
   ######################################################################################
   train.data = read.csv("C:/Users/User/Desktop/jb/train.csv")
   train.data = train.data[,-1]
